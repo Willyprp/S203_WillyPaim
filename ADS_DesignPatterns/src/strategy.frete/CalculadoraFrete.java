@@ -2,9 +2,9 @@ package strategy.frete;
 public class CalculadoraFrete {
 
 	
-	public double calcular(String servico, double pesoEmKg){
+	public double calcular(Fretavel fretavel, double pesoEmKg){
  
-
+        return fretavel.calculaValor(pesoEmKg);
        
         
         
