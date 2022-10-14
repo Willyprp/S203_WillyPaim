@@ -7,7 +7,7 @@ import org.junit.Test;
 public class PizzaBuilderTest {
 
 	@Test
-	void deveConstruirPizzaValida() {
+	public void deveConstruirPizzaValida() {
 		
 		Pizza pizza = new PizzaBuilder()
 				.setSize(1)
@@ -20,34 +20,6 @@ public class PizzaBuilderTest {
 		assertTrue(pizza.getFlagCheese());
 		assertTrue(pizza.getFlagPepperoni());
 		
-	}
-
-	@Test
-	void deveInvalidarPizzaComTamanhoErrado() {
-		
-		try{
-			Pizza pizza = new PizzaBuilder()
-				.setSize(9)
-				.addCheese()
-				.addPepperoni()
-				.getPizza();
-				fail("Devia ter lançado exception")
-		}catch(IllegalStateException e){
-			e.printStackTrace();
-		}	
-	}
-
-	@Test
-	void deveInvalidarPizzaSemIngrediente() {
-		
-		try{
-			Pizza pizza = new PizzaBuilder()
-				.setSize(2)
-				.getPizza();
-				fail("Devia ter lançado exception")
-		}catch(IllegalStateException e){
-			e.printStackTrace();
-		}	
 	}
 
 }

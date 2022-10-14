@@ -23,7 +23,7 @@ public class PizzaBuilder {
 	}
 	
 	public PizzaBuilder addPepperoni() {
-		pizza.setFlagCheese(true);
+		pizza.setFlagPepperoni(true);
 		return this;
 		
 	}
