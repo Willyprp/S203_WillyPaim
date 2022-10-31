@@ -1,4 +1,3 @@
-
 package state.artigo;
 
 import java.time.LocalDateTime;

@@ -4,14 +4,16 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Artigo {
-	public Estado estado;
-	private List <String> logHistorico = new ArrayList<>();
-	
-	public Artigo() {
-		this.estado = new EstadoRascunho(this);
-	}
-	
-	public void publicar() {
+
+    private Estado estado;
+    
+    private List<String> logHistorico = new ArrayList<>();
+    
+    public Artigo() {
+        this.estado = new EstadoRascunho(this);
+    }
+    
+    public void publicar() {
         estado.publicar();
     }
     
@@ -30,4 +32,6 @@ public class Artigo {
     public List<String> getLogHistorico() {
         return logHistorico;
     }
+            
+     
 }

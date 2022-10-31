@@ -6,7 +6,7 @@ import org.junit.Test;
 
 public class ArtigoTest {
 
-	@Test
+    @Test
     public void daveArtigoTransitarDeRascunhoAteAprovado() {
         GerenteDeSeguranca gerenteDeSeguranca = GerenteDeSeguranca.getInstance();
         
@@ -51,5 +51,4 @@ public class ArtigoTest {
         //imprimir log
         artigo.getLogHistorico().forEach(System.out::println);
     }
-
 }

@@ -27,10 +27,10 @@ public class GerenteDeSeguranca {
     }
 
     public boolean ehUsuarioModerador() {
-        return "Moderador".equals(usuarioCorrente);
+        return "MODERADOR".equals(usuarioCorrente);
     }
     
     public boolean ehUsuarioAutor() {
-        return "Autor".equals(usuarioCorrente);
+        return "AUTOR".equals(usuarioCorrente);
     }
 }

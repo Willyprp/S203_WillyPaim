@@ -16,7 +16,7 @@ public class EstadoRevisando implements Estado{
         GerenteDeSeguranca seguranca = GerenteDeSeguranca.getInstance(); 
             if(seguranca.ehUsuarioModerador()) {
                 this.artigo.transitarEstadoPara(new EstadoAprovado(artigo));
-                artigo.getLogHistorico().add("Transitando para APROVADO em " + LocalDateTime.now());
+                this.artigo.getLogHistorico().add("Transitando para APROVADO em " + LocalDateTime.now());
                 
             }else {
                 throw new RuntimeException("Usuario não tem permissão para publicar");
