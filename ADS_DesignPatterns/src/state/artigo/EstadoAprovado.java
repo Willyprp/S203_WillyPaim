@@ -1,23 +1,27 @@
+
 package state.artigo;
 
+
 public class EstadoAprovado implements Estado{
-	private zzzArtigo artigo;
-	
-	public EstadoAprovado(zzzArtigo artigo) {
-		
-		this.artigo = artigo;
-	}
 
-	@Override
-	public void publicar() {
-		
-		
-	}
+    private Artigo artigo;
+    
+    
+    
+    public EstadoAprovado(Artigo artigo) {
+        this.artigo = artigo;
+    }
 
-	@Override
-	public void reprovar() {
-		
-		
-	}
+    @Override
+    public void publicar() {
+        //faz nada
+
+    }
+
+    @Override
+    public void reprovar() {
+        //faz nada
+    }
+
 
 }
